@@ -24,19 +24,19 @@ function getComputerChoice() {
 function win(userChoice, computerChoice) {
 	userScore++;
 	userScore_span.innerHTML = userScore + " ";
-	result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
+	result_p.innerHTML = userChoice + " beats " + computerChoice + ". You win.";
 	compSelects.innerHTML = "Computer chooses " + computerChoice + ".";
 }
 
 function lose(userChoice, computerChoice) {
 	computerScore++;
 	computerScore_span.innerHTML = " " + computerScore;
-	result_p.innerHTML = computerChoice + " beats " + userChoice + ". You lose!";
+	result_p.innerHTML = computerChoice + " beats " + userChoice + ". You lose.";
 	compSelects.innerHTML = "Computer chooses " + computerChoice + ".";
 }
 
 function draw(userChoice, computerChoice) {
-	result_p.innerHTML = userChoice + " matches " + computerChoice + ". Draw!";
+	result_p.innerHTML = userChoice + " matches " + computerChoice + ". Draw.";
 	compSelects.innerHTML = "Computer chooses " + computerChoice + ".";
 }
 
