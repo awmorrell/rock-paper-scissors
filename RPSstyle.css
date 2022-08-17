@@ -64,6 +64,7 @@ body {
 
 .result > p {
 	text-align: center;
+	font-size: 25px;
 	margin-top: 25px;
 	font-family: Asap, sans-serif;
 }
