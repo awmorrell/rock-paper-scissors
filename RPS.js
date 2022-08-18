@@ -58,6 +58,7 @@ function game(userChoice) {
 		case "ScissorsScissors":
 			draw(userChoice, computerChoice);
 	}
+	dissMessage();
 }
 
 function main() {
@@ -72,6 +73,14 @@ function main() {
 	scissors_div.addEventListener('click', function() {
 		game("Scissors");
 	})
+}
+
+function dissMessage() {
+	if(computerScore > userScore) {
+		actionMessage.innerHTML = "Yikes...";
+	} else {
+		actionMessage.innerHTML = "Make your move.";
+	}
 }
 
 main();
