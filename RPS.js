@@ -77,10 +77,16 @@ function main() {
 }
 
 function dissMessage() {
-	if(computerScore > userScore) {
-		actionMessage.innerHTML = "Yikes...";
+	if(computerScore > userScore && computerScore <= (userScore + 4)) {
+		actionMessage.innerHTML = "You're losing..";
+	} else if(computerScore < userScore && computerScore >= (userScore - 4)) {
+		actionMessage.innerHTML = "You're winning..";
+	} else if(computerScore >= (userScore + 5)) {
+		actionMessage.innerHTML = "You're falling apart here..";
+	} else if(userScore >= (computerScore + 5)) {
+		actionMessage.innerHTML = "Wow, you're good at this..";
 	} else {
-		actionMessage.innerHTML = "Make your move.";
+		actionMessage.innerHTML = "It's anyone's game..";
 	}
 }
 
