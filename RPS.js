@@ -8,6 +8,7 @@ const rock_div = document.getElementById("Rock"); /* DOM variable */
 const paper_div = document.getElementById("Paper"); /* DOM variable */
 const scissors_div = document.getElementById("Scissors"); /* DOM variable */
 const compSelects = document.getElementById("comp-selects"); /* DOM variable */
+const actionMessage = document.getElementById("action-message");
 	
 	/* We have now cached the DOM. We've created variables out of all of the 
 		DOM values and they are all stored for future use. Now we dont have to
