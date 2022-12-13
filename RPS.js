@@ -9,6 +9,7 @@ const paper_div = document.getElementById("Paper"); /* DOM variable */
 const scissors_div = document.getElementById("Scissors"); /* DOM variable */
 const compSelects = document.getElementById("comp-selects"); /* DOM variable */
 const actionMessage = document.getElementById("action-message");
+const reset_button = document.getElementById("reset-button");
 	
 	/* We have now cached the DOM. We've created variables out of all of the 
 		DOM values and they are all stored for future use. Now we dont have to
@@ -74,6 +75,9 @@ function main() {
 	scissors_div.addEventListener('click', function() {
 		game("Scissors");
 	})
+	reset_button.addEventListener('click', function() {
+		reset_score();
+	})
 }
 
 function dissMessage() {
@@ -88,6 +92,16 @@ function dissMessage() {
 	} else {
 		actionMessage.innerHTML = "It's anyone's game..";
 	}
+}
+
+function reset_score() {
+	computerScore_span.innerHTML = " " + 0;
+	userScore_span.innerHTML = 0 + " ";
+	actionMessage.innerHTML = "Make your move.";
+	result_p.innerHTML = "May the best hand win!";
+	compSelects.innerHTML = "Computer is ready...";
+	computerScore = 0;
+	userScore = 0;
 }
 
 main();
