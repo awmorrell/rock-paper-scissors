@@ -111,6 +111,17 @@ body > p {
 	margin-bottom: 5px;
 }
 
+#reset-button {
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 48.7%;
+	padding: 3px;
+}
+
+#reset-button:hover {
+	cursor: pointer;
+}
+
 /*#paper {
 	grid-column-start: 2;
 	justify-items: center;
